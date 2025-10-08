@@ -1,0 +1,24 @@
+{
+  "name": "borgo-santandrea-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Knopkaivy/borgo-santandrea-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Knopkaivy/borgo-santandrea-demo/issues"
+  },
+  "homepage": "https://github.com/Knopkaivy/borgo-santandrea-demo#readme",
+  "dependencies": {
+    "foundation-sites": "^6.9.0"
+  }
+}

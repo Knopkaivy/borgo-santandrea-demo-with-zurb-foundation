@@ -1,3 +1,7 @@
+@import 'settings';
+@import '../node_modules/foundation-sites/scss/foundation';
+@include foundation-everything;
+
 $font-family-primary: "Raleway", serif;
 $font-family-secondary: "Old Standard TT", serif;
 $font-family-tertiary: "Cormorant Garamond", serif;
@@ -199,6 +203,7 @@ body{
             border-top: 1px solid $color-white;
             margin: 0;
             width: 100%;
+            max-width: unset;
             transform: scale(0);
             animation: entry__hr .75s ease 2s forwards;
         }

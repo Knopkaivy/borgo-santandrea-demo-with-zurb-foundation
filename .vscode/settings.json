@@ -1,0 +1,19 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "**/node_modules/**",
+    ".vscode/**",
+    "**/foundation/**",
+    "**/foundation-sites/**"
+  ],
+  "liveSassCompile.settings.includeItems": [
+    "/scss/main.scss"
+  ],
+  "liveSassCompile.settings.generateMap": false
+}
