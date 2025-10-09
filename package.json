@@ -20,5 +20,8 @@
   "homepage": "https://github.com/Knopkaivy/borgo-santandrea-demo#readme",
   "dependencies": {
     "foundation-sites": "^6.9.0"
+  },
+  "devDependencies": {
+    "motion-ui": "^2.0.8"
   }
 }
