@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function(arg) {
             languagesDropdown: '[data-languages-dropdown]',
             languagesAlternative: '[data-languages-alternative]',
             languagesChevron: '[data-languages-chevron]',
-            menu: '[data-menu]',
             menuCloseBtn: '[data-menu-close]',
             menuOpenBtn: '[data-menu-open]',
             menuItem: '[data-menu-item]',
@@ -47,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function(arg) {
             hidden: 'hidden',
             menuActive: 'is-menu-active',
             menuClosed: 'is-menu-closed',
-            menuImageShowImage: 'menu__bg-image--show-image',
+            menuImageShowImage: 'navmenu__bg-image--show-image',
         },
         idSelectors: {
             navBar: '#section-navbar',
@@ -129,8 +128,6 @@ document.addEventListener("DOMContentLoaded", function(arg) {
     }
 
     const toggleMenu = () =>{
-        document.body.classList.toggle(variables.classes.menuActive);
-        document.querySelector(variables.dataSelectors.menu).classList.toggle(variables.classes.menuActive);
         navbar.classList.toggle(variables.classes.menuActive);
         if(navbar.classList.contains(variables.classes.menuActive)){
             navbar.classList.remove(variables.classes.menuClosed);
@@ -142,7 +139,8 @@ document.addEventListener("DOMContentLoaded", function(arg) {
     const showItemImage = (event) =>{
         menuBgOverlay.style.opacity = .8;
         const itemId = event.target.id.slice(-1);
-        document.querySelector(`${variables.idSelectors.menuImageId}${itemId}`).classList.add(variables.classes.menuImageShowImage);
+        const imageElement = document.querySelector(`${variables.idSelectors.menuImageId}${itemId}`);
+        imageElement.classList.add(variables.classes.menuImageShowImage);
     }
 
     const hideItemImage = (event) =>{

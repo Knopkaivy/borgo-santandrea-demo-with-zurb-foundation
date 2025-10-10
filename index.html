@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEMO Only - Borgo Santandrea Luxury Hotel - 5-star hotel in Amalfi : Borgo Santandrea</title>
 </head>
-<body class="" >
+<body>
     <div class="volume__floater">                        
         <button class="button volume__button" data-volume >
             <div class="navbar__volume--is-mute" data-volume-mute >
@@ -31,11 +31,11 @@
     </div>
 
     <section id="section-navbar" class="navbar navbar__section" data-navbar >
-        <header class="navbar__header ">
-            <div class="navbar__container">
+        <header class="navbar__header">
+            <div class="navbar__container top-bar">
                 <div class="navbar__item navbar__navigation">
                     <div class="navbar__subitem">
-                        <button class="navbar__button navbar__button-menu" data-menu-open >
+                        <button class="navbar__button navbar__button-menu" data-menu-open data-toggle="section-menu" >
                             <div class="navbar__button-menu-line navbar__button-menu-line--one"></div>
                             <div class="navbar__button-menu-line navbar__button-menu-line--two"></div>
                         </button>
@@ -43,8 +43,8 @@
                     <div class="navbar__subitem navbar__languages-wrapper">
                         <div class="navbar__languages">
                             <div class="navbar__languages-header" data-languages-dropdown >
-                                <div class="navbar__languages--long">Languages</div>
-                                <div class="navbar__languages--short">EN</div>
+                                <div class="hide-for-small-only">Languages</div>
+                                <div class="show-for-small-only">EN</div>
                                 <div class="navbar__languages-icon-container" >
                                     <svg class="icon icon-chevron-down icon-chevron icon__chevron--down" viewBox="0 0 24 24" fill="white" data-languages-chevron>
                                         <path d="M5.293 9.707l6 6c0.391 0.391 1.024 0.391 1.414 0l6-6c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path>
@@ -81,91 +81,91 @@
             <hr/>
         </header>
     </section>
-
-    <section id="section-menu" class="menu__section" data-menu>
-        <div class="menu__bg menu__bg-overlay" data-bg-overlay>
-        </div>
-        <div class="menu__bg menu__bg-image">
-            <img id="menu-back-img-0" src="./Images/menu_back_1.webp" class="menu__bg-image-item" aria-hidden="true" data-menu-image>
-            <img id="menu-back-img-1" src="./Images/menu_back_2.webp" class="menu__bg-image-item" aria-hidden="true" data-menu-image>
-            <img id="menu-back-img-2" src="./Images/menu_back_3.webp" class="menu__bg-image-item" aria-hidden="true" data-menu-image>
-            <img id="menu-back-img-3" src="./Images/menu_back_4.webp" class="menu__bg-image-item" aria-hidden="true" data-menu-image>
-            <img id="menu-back-img-4" src="./Images/menu_back_5.webp" class="menu__bg-image-item" aria-hidden="true" data-menu-image>
-        </div>
-        <div class="menu">
-            <div class="menu__primary">
-                <ul class="menu__list menu__list--primary">
-                    <li class="menu__list-item menu__list-item--primary">
-                        <p id="menu-item-0" data-menu-item >THE BORGO</p>
-                        <ul id="menu-list-0" class="menu__list menu__list--tertiary" data-menu-sublist>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">THE BORGO</a></li>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">LOCATION</a></li>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">GARDENS</a></li>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">PRIVATE BEACH AND POOL</a></li>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">WELLNESS RETREAT AND FITNESS</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__list-item menu__list-item--primary">
-                        <p id="menu-item-1" data-menu-item >ACCOMMODATION</p>
-                        <ul id="menu-list-1" class="menu__list menu__list--tertiary" data-menu-sublist>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">SUITES</a></li>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">ROOMS</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__list-item menu__list-item--primary">
-                        <p id="menu-item-2" data-menu-item >WINING & DINING</p>
-                        <ul id="menu-list-2" class="menu__list menu__list--tertiary" data-menu-sublist>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">THE BREAKFAST</a></li>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">BEACH CLUB PIZZERIA & GRILL</a></li>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">PLUMAGO BAR</a></li>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">ALICI</a></li>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">MARINELLA RESTAURANT</a></li>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">WINE CELLAR</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__list-item menu__list-item--primary">
-                        <p id="menu-item-3" data-menu-item >BEACH CLUB</p>
-                        <ul id="menu-list-3" class="menu__list menu__list--tertiary" data-menu-sublist>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">MARINELLA PRIVATE BEACH</a></li>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">BEACH CLUB PIZZERIA & GRILL</a></li>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">THE PIZZA</a></li>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">DOCKING AT THE BORGO</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__list-item menu__list-item--primary">
-                        <p id="menu-item-4" data-menu-item >BSA COLLECTION</p>
-                        <ul id="menu-list-4" class="menu__list menu__list--tertiary" data-menu-sublist>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">TILES</a></li>
-                            <li class="menu__list-item menu__list-item--tertiary"><a href="/">VINTAGE</a></li>
-                        </ul>
-                    </li>
+    <section id="section-menu" class="full reveal navmenu__reveal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+        <div class="navmenu__section" data-menu>
+            <div class="navmenu__bg navmenu__bg-overlay" data-bg-overlay>
             </div>
-            <div class="menu__secondary">
-                <ul class="menu__list menu__list--secondary menu__list--social">
-                    <li class="menu__list-item menu__list-item--secondary"><a href="/">PHOTOGALLERY</a></li>
-                    <li class="menu__list-item menu__list-item--secondary"><a href="/">PRESS</a></li>
-                    <li class="menu__list-item menu__list-item--secondary"><a href="/">AWARDS</a></li>
-                    <li class="menu__list-item menu__list-item--secondary"><a href="/">CONTACTS</a></li>
-                </ul>
-                <ul class="menu__list menu__list--secondary menu__list--privacy">
-                    <li class="menu__list-item menu__list-item--secondary menu__list-item--privacy"><a href="/">FAQ</a></li>
-                    <li class="menu__list-item menu__list-item--secondary menu__list-item--privacy"><a href="/">PRIVACY POLICY</a></li>
-                    <li class="menu__list-item menu__list-item--secondary menu__list-item--privacy"><a href="/">COOKIES</a></li>
-                    <li class="menu__list-item menu__list-item--secondary menu__list-item--privacy"><a href="/">CREDITS</a></li>
-                </ul>
+            <div class="navmenu__bg navmenu__bg-image">
+                <img id="menu-back-img-0" src="./Images/menu_back_1.webp" class="navmenu__bg-image-item" aria-hidden="true" data-menu-image>
+                <img id="menu-back-img-1" src="./Images/menu_back_2.webp" class="navmenu__bg-image-item" aria-hidden="true" data-menu-image>
+                <img id="menu-back-img-2" src="./Images/menu_back_3.webp" class="navmenu__bg-image-item" aria-hidden="true" data-menu-image>
+                <img id="menu-back-img-3" src="./Images/menu_back_4.webp" class="navmenu__bg-image-item" aria-hidden="true" data-menu-image>
+                <img id="menu-back-img-4" src="./Images/menu_back_5.webp" class="navmenu__bg-image-item" aria-hidden="true" data-menu-image>
+            </div>
+            <div class="navmenu">
+                <div class="navmenu__primary">
+                    <ul class="navmenu__list navmenu__list--primary">
+                        <li class="navmenu__list-item navmenu__list-item--primary">
+                            <p id="menu-item-0" data-menu-item >THE BORGO</p>
+                            <ul id="menu-list-0" class="navmenu__list navmenu__list--tertiary" data-menu-sublist>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">THE BORGO</a></li>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">LOCATION</a></li>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">GARDENS</a></li>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">PRIVATE BEACH AND POOL</a></li>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">WELLNESS RETREAT AND FITNESS</a></li>
+                            </ul>
+                        </li>
+                        <li class="navmenu__list-item navmenu__list-item--primary">
+                            <p id="menu-item-1" data-menu-item >ACCOMMODATION</p>
+                            <ul id="menu-list-1" class="navmenu__list navmenu__list--tertiary" data-menu-sublist>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">SUITES</a></li>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">ROOMS</a></li>
+                            </ul>
+                        </li>
+                        <li class="navmenu__list-item navmenu__list-item--primary">
+                            <p id="menu-item-2" data-menu-item >WINING & DINING</p>
+                            <ul id="menu-list-2" class="navmenu__list navmenu__list--tertiary" data-menu-sublist>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">THE BREAKFAST</a></li>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">BEACH CLUB PIZZERIA & GRILL</a></li>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">PLUMAGO BAR</a></li>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">ALICI</a></li>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">MARINELLA RESTAURANT</a></li>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">WINE CELLAR</a></li>
+                            </ul>
+                        </li>
+                        <li class="navmenu__list-item navmenu__list-item--primary">
+                            <p id="menu-item-3" data-menu-item >BEACH CLUB</p>
+                            <ul id="menu-list-3" class="navmenu__list navmenu__list--tertiary" data-menu-sublist>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">MARINELLA PRIVATE BEACH</a></li>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">BEACH CLUB PIZZERIA & GRILL</a></li>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">THE PIZZA</a></li>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">DOCKING AT THE BORGO</a></li>
+                            </ul>
+                        </li>
+                        <li class="navmenu__list-item navmenu__list-item--primary">
+                            <p id="menu-item-4" data-menu-item >BSA COLLECTION</p>
+                            <ul id="menu-list-4" class="navmenu__list navmenu__list--tertiary" data-menu-sublist>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">TILES</a></li>
+                                <li class="navmenu__list-item navmenu__list-item--tertiary"><a href="/">VINTAGE</a></li>
+                            </ul>
+                        </li>
+                </div>
+                <div class="navmenu__secondary">
+                    <ul class="navmenu__list navmenu__list--secondary navmenu__list--social">
+                        <li class="navmenu__list-item navmenu__list-item--secondary"><a href="/">PHOTOGALLERY</a></li>
+                        <li class="navmenu__list-item navmenu__list-item--secondary"><a href="/">PRESS</a></li>
+                        <li class="navmenu__list-item navmenu__list-item--secondary"><a href="/">AWARDS</a></li>
+                        <li class="navmenu__list-item navmenu__list-item--secondary"><a href="/">CONTACTS</a></li>
+                    </ul>
+                    <ul class="navmenu__list navmenu__list--secondary navmenu__list--privacy">
+                        <li class="navmenu__list-item navmenu__list-item--secondary navmenu__list-item--privacy"><a href="/">FAQ</a></li>
+                        <li class="navmenu__list-item navmenu__list-item--secondary navmenu__list-item--privacy"><a href="/">PRIVACY POLICY</a></li>
+                        <li class="navmenu__list-item navmenu__list-item--secondary navmenu__list-item--privacy"><a href="/">COOKIES</a></li>
+                        <li class="navmenu__list-item navmenu__list-item--secondary navmenu__list-item--privacy"><a href="/">CREDITS</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
-
     <section id="section-hero" class="hero hero__section" >
         <video id="page_top_video" class="hero__video" src="https://borgosantandrea.it/wp-content/themes/borgosantandrea/build/img/video_home_1080.mp4" data-video-mobile="https://borgosantandrea.it/wp-content/themes/borgosantandrea/build/img/video_home_720.mp4" data-video-desktop="https://borgosantandrea.it/wp-content/themes/borgosantandrea/build/img/video_home_1080.mp4" playsinline="" muted="" loop=""></video>
-        <div class="hero__overlay hero__overlay--transparent">
-            <div class="hero__header-container hero__header-container--one">
-                <div class="hero__header hero__header--one">THE INFINITE</div>
+        <div class="hero__overlay hero__overlay--transparent grid-x">
+            <div class="cell large-3 large-offset-1 small-12 grid-x align-middle align-center">
+                <h1 class="hero__header hero__header--one" aria-label="Borgo Santandrea - The Infinite Blue">THE INFINITE</h1>
             </div>
         </div>
-        <div class="hero__overlay hero__overlay--shadow">
-            <div class="hero__header-container hero__header-container--two">
+        <div class="hero__overlay hero__overlay--shadow grid-x">
+            <div class="cell large-3 large-offset-4 small-12 grid-x align-middle align-center">
                 <div class="hero__header hero__header--two">BLUE</div>
             </div>
         </div>
@@ -177,11 +177,11 @@
                 <img class="haven__image-main" src="./Images/borgosantandrea_home_02.webp" alt="sea view from the hotel">
             </div>
             <div class="haven__content-container">
-                <div class="haven__content-header" role="heading" aria-level="2" >
+                <h2 class="haven__content-header" role="heading">
                     <span class="haven__content-header--one">A HAVEN</span>
                     <span class="haven__content-header--two">OF SERENITY</span>
                     <span class="haven__content-header--three">ON THE AMALFI COAST</span>
-                </div>
+                </h2>
                 <div class="haven__content-decoration-line decoration-line decoration-line--blue"></div>
                 <div class="haven__content">
                     <div class="haven__content-description">
@@ -207,7 +207,8 @@
             <div class="story__headline headline">
                 <div class="story__headline-border headline__border"></div>
                 <div class="story__headline-text-container headline__text-container">
-                    <p class="story__headline-text headline__text">one of the world’s most romantic destinations</p>
+                    <p class="story__headline-text headline__text" aria-hidden="true">one of the world’s most romantic destinations</p>
+                    <h2 class="show-for-sr">one of the world’s most romantic destinations</h2>
                 </div>
                 <div class="story__headline-border headline__border"></div>
             </div>
@@ -240,6 +241,7 @@
             </div>
             <div class="gardens__image-overlay"></div>
             <div class="gardens__content-container">
+                <h2 class="show-for-sr">MEDITERRANEAN-STYLE GARDENS</h2>
                 <p class="gardens__content-text">
                     Our pristine 
                     <span class="gardens__content-text--white">MEDITERRANEAN-STYLE GARDENS</span> 
@@ -259,7 +261,8 @@
             <div class="suites__headline headline">
                 <div class="suites__headline-border headline__border"></div>
                 <div class="suites__headline-text-container headline__text-container">
-                    <p class="suites__headline-text headline__text">where treasured traditions meet contemporary luxury</p>
+                    <p class="suites__headline-text headline__text" aria-hidden="true">where treasured traditions meet contemporary luxury</p>
+                    <h2 class="show-for-sr">where treasured traditions meet contemporary luxury</h2>
                 </div>
                 <div class="suites__headline-border headline__border"></div>
             </div>
@@ -462,7 +465,8 @@
             <div class="social__headline headline">
                 <div class="social__headline-border headline__border"></div>
                 <div class="social__headline-text-container headline__text-container">
-                    <p class="social__headline-text headline__text">snippets from social</p>
+                    <p class="social__headline-text headline__text" aria-hidden="true">snippets from social</p>
+                    <h2 class="show-for-sr">snippets from social</h2>
                 </div>
                 <div class="social__headline-border headline__border"></div>
             </div>
@@ -545,6 +549,7 @@
 
     <section id="section-awards">
         <div class="awards">
+            <h2 class="show-for-sr">Awards</h2>
             <div class="awards__container awards__container--logo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="201" height="91" viewBox="0 0 201 91">
                     <g fill="none" fill-rule="evenodd">
@@ -570,7 +575,7 @@
     <section id="section-footer">
         <div class="footer">
             <div class="footer__section footer__section--rooms footer__rooms">
-                <h4 class="footer__header">ROOMS</h4>
+                <h3 class="footer__header">ROOMS</h3>
                 <ul class="footer__list">
                     <li class="footer__list-item">Overview</li>
                     <li class="footer__list-item">Classic Rooms courtyard view</li>
@@ -579,7 +584,7 @@
                 </ul>
             </div>
             <div class="footer__section footer__section--suites footer__suites">
-                <h4 class="footer__header">SUITES</h4>
+                <h3 class="footer__header">SUITES</h3>
                 <ul class="footer__list">
                     <li class="footer__list-item">Overview</li>
                     <li class="footer__list-item">Junior Suite Sea view</li>
@@ -591,7 +596,7 @@
                 </ul>
             </div>
             <div class="footer__section footer__section--dining footer__dining">
-                <h4 class="footer__header footer__header--dining">DINING</h4>
+                <h3 class="footer__header footer__header--dining">DINING</h3>
                 <div class="footer__dining-list">
                     <a href="/" class="footer__dining-link">
                         <div class="footer__dining-link-image">
@@ -608,7 +613,7 @@
                 </div>
             </div>
             <div class="footer__section footer__section--contacts footer__contacts">
-                <h4 class="footer__header footer__header--contacts">CONTACTS</h4>
+                <h3 class="footer__header footer__header--contacts">CONTACTS</h3>
                 <p>
                     Via Giovanni Augustariccio, 33
                     <br/>
@@ -628,7 +633,7 @@
                 </p>
             </div>
             <div class="footer__section footer__section--follow footer__follow">
-                <h4 class="footer__header footer__header--follow">FOLLOW US</h4>
+                <h3 class="footer__header footer__header--follow">FOLLOW US</h3>
                 <div class="footer__follow-links">
                     <a href="/" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="w-6 h-6 xl:w-5 xl:h-5" viewBox="0 0 16 16"> 
@@ -674,6 +679,11 @@
     
     <audio id="audio" playsinline="" loop="" preload="none" src="https://borgosantandrea.it/wp-content/themes/borgosantandrea/build/audio/audio.mp3"></audio>
     
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
     <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
