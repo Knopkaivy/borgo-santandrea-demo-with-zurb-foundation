@@ -172,39 +172,42 @@
     </section>
 
     <section id="section-haven">
-        <div class="haven">
-            <div class="haven__image-main-container">
-                <img class="haven__image-main" src="./Images/borgosantandrea_home_02.webp" alt="sea view from the hotel">
-            </div>
-            <div class="haven__content-container">
-                <h2 class="haven__content-header" role="heading">
-                    <span class="haven__content-header--one">A HAVEN</span>
-                    <span class="haven__content-header--two">OF SERENITY</span>
-                    <span class="haven__content-header--three">ON THE AMALFI COAST</span>
-                </h2>
-                <div class="haven__content-decoration-line decoration-line decoration-line--blue"></div>
-                <div class="haven__content">
-                    <div class="haven__content-description">
-                        <p class="haven__content-text--one">Overlooking the enchanting, centuries-old fishing village of Conca dei Marini, Borgo Santandrea is a serene haven situated in the heart of the Amalfi Coast.</p>
-                        <p class="haven__content-text--two">A 5-star hotel just a few minutes from Amalfi, where you can experience the luxury of a world created for your well-being.</p>
-                    </div>
-                    <div class="haven__content-image-container">
-                        <img src="./Images/borgosantandrea_home_01.webp" alt="cliff view from the hotel">
-                    </div>
-                    <a href="" class="haven__content-link content-link" >
-                        <div class="haven__content-link-icon content-link__icon">
-                            <img src="./Icons/tile_tortora.png" aria-hidden="true">
+        <div class="haven grid-x align-stretch">
+            <div class="haven__content-container cell large-5 large-offset-1 medium-8 medium-offset-2 small-12 align-self-stretch grid-x">
+                <div class="cell large-10 large-offset-1 medium-10 medium-offset-1 small-12">
+                    <h2 class="haven__content-header grid-y" role="heading">
+                        <span class="haven__content-header--one">A HAVEN</span>
+                        <span class="haven__content-header--two">OF SERENITY</span>
+                        <span class="haven__content-header--three">ON THE AMALFI COAST</span>
+                    </h2>
+                    <div class="haven__content grid-x">
+                        <div class="haven__content-description cell grid-y">
+                            <p class="haven__content-text--one">Overlooking the enchanting, centuries-old fishing village of Conca dei Marini, Borgo Santandrea is a serene haven situated in the heart of the Amalfi Coast.</p>
+                            <p class="haven__content-text--two">A 5-star hotel just a few minutes from Amalfi, where you can experience the luxury of a world created for your well-being.</p>
                         </div>
-                        <div class="haven__content-link-name content-link__name">LOCATION</div>
-                    </a>
+                        <div class="cell large-6 large-offset-3 medium-8 medium-offset-2 small-10 small-offset-1">
+                            <div class="haven__content-image-container">
+                                <img src="./Images/borgosantandrea_home_01.webp" alt="cliff view from the hotel">
+                            </div>
+                            <a href="" class="haven__content-link content-link" >
+                                <div class="haven__content-link-icon content-link__icon">
+                                    <img src="./Icons/tile_tortora.png" aria-hidden="true">
+                                </div>
+                                <div class="haven__content-link-name content-link__name">LOCATION</div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="haven__image-main-container cell large-6 show-for-large">
+                <img class="haven__image-main" src="./Images/borgosantandrea_home_02.webp" alt="sea view from the hotel">
             </div>
         </div>
     </section>
 
     <section id="section-story">
-        <div class="story">
-            <div class="story__headline headline">
+        <div class="story grid-y align-middle">
+            <div class="story__headline headline cell">
                 <div class="story__headline-border headline__border"></div>
                 <div class="story__headline-text-container headline__text-container">
                     <p class="story__headline-text headline__text" aria-hidden="true">one of the world’s most romantic destinations</p>
@@ -212,14 +215,14 @@
                 </div>
                 <div class="story__headline-border headline__border"></div>
             </div>
-            <div class="story__image-container story__image-container--secondary">
+            <div class="story__image-container story__image-container--secondary cell">
                 <img src="./Images/borgosantandrea_home_03.webp" alt="bronze statue of goddess">
             </div>
-            <div class="story__description">
+            <div class="story__description cell">
                 Nestled 90 meters above sea level, our resort-style hotel features 29 full-service rooms and 16 luxurious suites which offer uninterrupted views one of the world’s most romantic destinations.
             </div>
-            <div class="story__main-content">
-                <div class="story__image-container story__image-container--main">
+            <div class="story__main-content cell grid-x small-grid-y align-center">
+                <div class="story__image-container story__image-container--main cell large-6 large-offset-3 medium-11 small-12">
                     <img src="./Images/borgosantandrea_home_04.webp" alt="hotel against mountain cliff">
                 </div>
                 <div class="story__link-container">
@@ -234,7 +237,7 @@
         </div>
     </section>
 
-    <section id="section-gardens">
+    <!-- <section id="section-gardens">
         <div class="gardens">
             <div class="gardens__image-container">
                 <img src="./Images/borgosantandrea_home_05.webp" alt="hotel garden patio agains sea background"/>
@@ -254,7 +257,7 @@
                 <div class="gardens__content-decoration-line decoration-line decoration-line--white"></div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="section-suites">
         <div class="suites">
@@ -266,12 +269,12 @@
                 </div>
                 <div class="suites__headline-border headline__border"></div>
             </div>
-            <div class="suites__main">
-                <div class="suites__image-container--main">
+            <div class="suites__main grid-x">
+                <div class="suites__image-container--main large-7 medium-12 small-12">
                     <img class="suites__image--main" src="./Images/borgosantandrea_home_07.webp" alt="suite with view on water">
                 </div>
-                <div class="suites__content-container">
-                    <div class="suites__content-description">
+                <div class="suites__content-container large-3 large-offset-1 medium-8 medium-offset-2 small-10 small-offset-1 align-self-middle grid-y">
+                    <div class="suites__content-description grid-y">
                         <p class="suites__content-text--one">Rooms and Suites are suspended between the azure sea and the deep blue skies.</p>
                         <p class="suites__content-text--two">Located 50 to 79 metres above sea level, they offer breathtaking seascapes of the Amalfi Coast. Inspired by the finesse of Italian craftmanship, each room is uniquely designed, merging artisanal Mediterranean traditions with elegant mid-century design.</p>
                     </div>
@@ -321,7 +324,7 @@
         </div>
     </section>
 
-    <section id="section-restaurant">
+    <!-- <section id="section-restaurant">
         <div class="restaurant">
             <div class="restaurant__image-container">
                 <img class="restaurant__image" src="./Images/borgosantandrea_marinella_top.webp" alt="restaurant patio with cliff view">
@@ -347,7 +350,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="section-beach">
         <div class="beach">

@@ -773,47 +773,33 @@ body{
 
 .haven{
     background-color: rgba(get-color(tertiary), .1);
-    display: grid;
-    grid-template-columns: repeat(19, 1fr);
     overflow-x: hidden;
+    height: auto;
 
     &__image-main{
         transform: scale(1.5);
 
         &-container{
-            grid-column-start: 6;
-            grid-column-end: 20;
-            grid-row-start: 1;
             overflow: hidden;
             z-index: -1;
+            
+            & img{
+                height: 100%;
+            }
         }
     }
 
     &__content{
-        grid-column-start: 4;
-        grid-column-end: 8;
+
         &-container{
             background-color: get-color(light);
-            height: fit-content;
-            grid-column-start: 3;
-            grid-column-end: 11;
-            grid-row-start: 1;
-            display: grid;
-            grid-template-columns: repeat(8, 1fr);
-            grid-auto-rows: min-content;
-            padding: 22.4rem 0;
+            padding: 10rem 0;
             z-index: 1;
         }
 
         &-header{
-            grid-column-start: 3;
-            grid-column-end: 9;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
             font-family: $font-family-tertiary;
             color: get-color(secondary);
-            line-height: 1;
             margin-bottom: 10rem;
 
             &--one{
@@ -832,22 +818,12 @@ body{
             }
         }
 
-        &-decoration-line{
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 1;
-        }
-
         &-description{
-            display: flex;
-            flex-direction: column;
-            gap: 4rem;
             color: get-color(primary);
             margin-bottom: 10rem;
-            p{
-                margin: 0;
-            }
+            gap: 2rem
         }
+        
         &-text{
             &--one{
                 font-family: $font-family-secondary;
@@ -895,10 +871,8 @@ body{
     width: 100%;
     background-color: rgba(get-color(tertiary), .1);
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 22.4rem 0;
+    padding-top: 22.4rem;
+    padding-bottom: 22.4rem;
     gap: 4rem;
     font-family: $font-family-secondary;
     color: get-color(primary);
@@ -913,16 +887,16 @@ body{
 
     &__main-content{
         margin-top: 16rem;
-        display: grid;
-        grid-template-columns: repeat(19, 1fr);
-        grid-template-rows: 1fr;
+        // display: grid;
+        // grid-template-columns: repeat(19, 1fr);
+        // grid-template-rows: 1fr;
     }
 
     &__image-container{
         &--main{
-            grid-column-start: 6;
-            grid-column-end: 15;
-            grid-row: 1;
+            // grid-column-start: 6;
+            // grid-column-end: 15;
+            // grid-row: 1;
         }
 
         &--secondary{
@@ -1025,14 +999,12 @@ body{
 }
 
 .suites{
+    background-color: rgba(get-color(tertiary), .1);
     width: 100%;
     min-height: 100vh;
     padding-top: 22.4rem;
 
     &__main{
-        display: grid;
-        grid-template-columns: repeat(19, 1fr);
-        grid-template-rows: 1fr;
         margin-top: 16rem;
     }
 
@@ -1041,9 +1013,6 @@ body{
         &-container{
             
             &--main{
-                grid-column-start: 1;
-                grid-column-end: 15;
-                grid-row: 1;
                 overflow: hidden;
                 z-index: -1;
 
@@ -1064,23 +1033,16 @@ body{
 
         &-container{
             background-color: $color-snow;
-            grid-column-start: 12;
-            grid-column-end: 20;
-            grid-row: 1;
             height: fit-content;
-            padding: 16rem 27.5%;
-            display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            align-self: end;
+            margin-top: 10rem;
+            margin-bottom: 10rem;
             z-index: 1;
 
         }
 
         &-description{
-            display: flex;
-            flex-direction: column;
             gap: 4rem;
             color: get-color(primary);
             margin-bottom: 10rem;
@@ -2380,7 +2342,6 @@ body{
 
         &__image-main{
             &-container{
-                height: 110vw;
                 overflow: hidden;
 
                 & img{
@@ -2401,10 +2362,6 @@ body{
 
             &-decoration-line{
                 display: none;
-            }
-
-            &-description{
-                margin-bottom: 4.8rem;
             }
 
             &-text{
@@ -2433,7 +2390,8 @@ body{
     }
 
     .story{
-        padding: 8rem 0;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
 
         &__description{
             letter-spacing: 0;
@@ -2494,21 +2452,7 @@ body{
     .suites{
         padding-top: 8rem;
 
-        &__image{
-
-            &-container{
-                &--main{
-                    width: 74vw;
-                    height: 111vw;
-                }
-            }
-        }
-
         &__content{
-
-            &-container{
-                padding: 8rem 20%;
-            }
     
             &-link{
     
@@ -3019,8 +2963,8 @@ body{
 
         &__main-content{
             width: 100%;
-            display: flex;
-            flex-direction: column;
+            // display: flex;
+            // flex-direction: column;
             margin-bottom: -4rem;
         }
 
@@ -3041,25 +2985,6 @@ body{
                 padding-right: 7rem;
             }
         }
-    }
-
-    .suites{
-
-        &__image{
-
-            &-container{
-                &--main{
-                    width: 74vw;
-                    height: 130vw;
-                }
-            }
-        }
-
-        &__content-container{
-            grid-column-start: 10;
-        }
-
-
     }
 
     .jr-suite{
@@ -3407,9 +3332,7 @@ body{
 
     .haven{
         &__image-main-container{
-            grid-column-start: 1;
-            grid-column-end: 20;
-            grid-row-start: 1;
+
             height: 200vw;
 
             & img{
@@ -3418,20 +3341,12 @@ body{
         }
 
         &__content{
-            grid-column-end: 12;
-
-            &-container{
-                grid-column-start: 1;
-                grid-column-end: 14;
-                grid-row-start: 1;
-                display: grid;
-                grid-template-columns: repeat(13, 1fr);
-                grid-auto-rows: min-content;
-            }
 
             &-header{
-                grid-column-start: 3;
-                grid-column-end: 12;
+
+                span{
+                    text-align: center;
+                }
 
                 &--one{
                     font-size: 10.5vw;
@@ -3451,37 +3366,9 @@ body{
                     line-height: 1.4;
                 }
             }
-
-            &-description{
-                gap: 4.8rem;
-            }
         }
     }
 
-    .story{
-        padding: 8rem 6.4rem;
-    }
-
-    .suites{
-
-        &__image{
-
-            &-container{
-                &--main{
-                    grid-column-end: 20;
-                    width: 100vw;
-                    height: 150vw;
-                }
-            }
-        }
-
-        &__content-container{
-            grid-column-start: 4;
-            padding: 8rem 25%;
-        }
-
-
-    }
 
     .jr-suite{
         &__main{
@@ -3774,7 +3661,6 @@ body{
 
             &-container{
                 &--main{
-                    align-self: end;
     
                     & img{
                         @include image-contain();
@@ -3785,11 +3671,6 @@ body{
         }
 
         &__content{
-
-            &-container{
-                margin-bottom: 25.6rem;
-                padding: 8rem 12.5%;
-            }
 
             &-text{
                 &--one{
@@ -3894,23 +3775,9 @@ body{
 
     .haven{
 
-        &__image-main{
-            &-container{
-                height: 250vw;
-                overflow: hidden;
-
-                & img{
-                    @include image-cover;
-                    object-position: 50% 50%;
-                }
-            }
-        }
-
         &__content{
 
             &-container{
-                display: flex;
-                flex-direction: column;
                 padding: 6.4rem 1.6rem;
             }
 
@@ -3930,10 +3797,6 @@ body{
                     font-size: 5vw;
                     letter-spacing: 0;
                 }
-            }
-
-            &-description{
-                padding-right: 2rem;
             }
 
             &-text{
@@ -4009,13 +3872,6 @@ body{
     .haven{
         display: block;
 
-        &__image-main{
-            &-container{
-                display: none;
-
-            }
-        }
-
         &__content{
 
             &-container{
@@ -4037,10 +3893,6 @@ body{
                 &--three{
                     font-size: 7vw;
                 }
-            }
-
-            &-description{
-                padding-right: 0;
             }
         }
     }
