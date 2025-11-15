@@ -1103,10 +1103,6 @@ body{
     padding-bottom: 22.4rem;
 
     &__description{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         gap: 4rem;
         margin: 22.4rem 0 12.8rem 0;
 
@@ -1151,27 +1147,10 @@ body{
     }
 
     &__main{
-        display: grid;
-        grid-template-columns: repeat(19, 1fr);
-        grid-template-rows: 1fr;
-
-        &-content{
-            grid-row: 1;
-            grid-column-start: 6;
-            grid-column-end: 12;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
 
         &-header{
 
             &-container{
-                grid-column-start: 14;
-                grid-column-end: 18;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
                 color: get-color(tertiary);
                 font-family: $font-family-tertiary;
                 font-weight: 400;
@@ -3372,29 +3351,12 @@ body{
 
     .jr-suite{
         &__main{
-            grid-auto-rows: min-content;
-
-            &-content{
-                grid-row: 2;
-                grid-column-start: 4;
-                grid-column-end: 17;
-            }
 
             &-header{
 
                 &-container{
-                    grid-column-start: 4;
-                    grid-column-end: 17;
                     margin-bottom: 4rem;
                     text-align: center;
-                }
-
-                &--two{
-                    font-size: 14.5rem;
-                }
-
-                &--one, &--three{
-                    font-size: 8.2rem;
                 }
             }
         }
@@ -3525,22 +3487,6 @@ body{
 
             &-text{
                 letter-spacing: .05rem;
-            }
-        }
-    }
-
-    .jr-suite{
-        &__main{
-
-            &-header{
-
-                &--two{
-                    font-size: 12.5rem;
-                }
-
-                &--one, &--three{
-                    font-size: 7.2rem;
-                }
             }
         }
     }
@@ -3680,22 +3626,6 @@ body{
         }
     }
 
-    .jr-suite{
-        &__main{
-
-            &-header{
-
-                &--two{
-                    font-size: 10rem;
-                }
-
-                &--one, &--three{
-                    font-size: 6rem;
-                }
-            }
-        }
-    }
-
     .restaurant{
         
         &__header{
@@ -3825,6 +3755,10 @@ body{
         &__main{
 
             &-header{
+
+                &-container{
+                    margin-top: 4rem;
+                }
 
                 &--two{
                     font-size: 8.5rem;

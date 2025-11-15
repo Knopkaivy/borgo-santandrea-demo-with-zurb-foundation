@@ -8013,10 +8013,6 @@ body {
   padding-bottom: 22.4rem;
 }
 .jr-suite__description {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 4rem;
   margin: 22.4rem 0 12.8rem 0;
 }
@@ -8051,25 +8047,7 @@ body {
   display: flex;
   align-items: center;
 }
-.jr-suite__main {
-  display: grid;
-  grid-template-columns: repeat(19, 1fr);
-  grid-template-rows: 1fr;
-}
-.jr-suite__main-content {
-  grid-row: 1;
-  grid-column-start: 6;
-  grid-column-end: 12;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .jr-suite__main-header-container {
-  grid-column-start: 14;
-  grid-column-end: 18;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   color: #cbc4bc;
   font-family: "Cormorant Garamond", serif;
   font-weight: 400;
@@ -9730,25 +9708,9 @@ body {
     letter-spacing: -0.1rem;
     line-height: 1.4;
   }
-  .jr-suite__main {
-    grid-auto-rows: min-content;
-  }
-  .jr-suite__main-content {
-    grid-row: 2;
-    grid-column-start: 4;
-    grid-column-end: 17;
-  }
   .jr-suite__main-header-container {
-    grid-column-start: 4;
-    grid-column-end: 17;
     margin-bottom: 4rem;
     text-align: center;
-  }
-  .jr-suite__main-header--two {
-    font-size: 14.5rem;
-  }
-  .jr-suite__main-header--one, .jr-suite__main-header--three {
-    font-size: 8.2rem;
   }
   .jr-suite__image-container--main img {
     height: auto;
@@ -9824,12 +9786,6 @@ body {
   }
   .gardens__content-text {
     letter-spacing: 0.05rem;
-  }
-  .jr-suite__main-header--two {
-    font-size: 12.5rem;
-  }
-  .jr-suite__main-header--one, .jr-suite__main-header--three {
-    font-size: 7.2rem;
   }
   .restaurant__main-container {
     padding-left: 14rem;
@@ -9907,12 +9863,6 @@ body {
   .suites__content-text--one {
     font-size: 1.8rem;
   }
-  .jr-suite__main-header--two {
-    font-size: 10rem;
-  }
-  .jr-suite__main-header--one, .jr-suite__main-header--three {
-    font-size: 6rem;
-  }
   .restaurant__header {
     font-size: 2rem;
     padding: 0 1.6rem;
@@ -9987,6 +9937,9 @@ body {
   }
   .gardens__content-text {
     font-size: 1.8rem;
+  }
+  .jr-suite__main-header-container {
+    margin-top: 4rem;
   }
   .jr-suite__main-header--two {
     font-size: 8.5rem;
