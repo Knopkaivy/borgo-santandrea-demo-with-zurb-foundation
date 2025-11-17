@@ -966,16 +966,10 @@ body{
             position: absolute;
             top: 12.8rem;
             right: 0;
-            width: 50%;
-            display: grid;
-            grid-template-columns: 8fr 1fr;
-            gap: 10rem;
+            width: 60%;
             align-items: start;
             box-sizing: border-box;
-            padding-right: 10rem;
             z-index: 2;
-            /*opacity: 0;
-            transform: translateY(35%);*/
         }
 
         &-text{
@@ -992,8 +986,6 @@ body{
 
         &-decoration-line{
             margin-top: 2.4rem;
-            /*opacity: 0;
-            transform: scale(0, 1);*/
         }
     }
 }
@@ -2372,18 +2364,11 @@ body{
 
     .gardens{
         &__content{
-            &-container{
-                display: flex;
-                padding-right: 8rem;
-            }
 
             &-text{
                 font-size: 2rem;
             }
-    
-            &-decoration-line{
-                display: none;
-            }
+
         }
     }
 
@@ -2913,7 +2898,6 @@ body{
         &__content{
             &-container{
                 top: 4.8rem;
-                padding-right: 7rem;
             }
         }
     }
@@ -3103,14 +3087,7 @@ body{
         letter-spacing: .342rem;
         word-spacing: .342rem;
     }
-    
-    .gardens{
-        &__content{
-            &-container{
-                padding-right: 6rem;
-            }
-        }
-    }
+
     
     .jr-suite{
         
@@ -3412,9 +3389,6 @@ body{
     
     .gardens{
         &__content{
-            &-container{
-                padding-right: 5rem;
-            }
 
             &-text{
                 letter-spacing: .05rem;
@@ -3488,7 +3462,6 @@ body{
         &__content{
             &-container{
                 width: 100%;
-                padding-left: 1.6rem;
             }
 
             &-text{
@@ -3638,9 +3611,6 @@ body{
 
     .gardens{
         &__content{
-            &-container{
-                padding-right: 4rem;
-            }
 
             &-text{
                 font-size: 1.8rem;
