@@ -523,9 +523,7 @@ body{
     padding: 0 2.4rem;
     width: 100%;
     height: 100vh;
-    display: flex;
     flex-direction: row-reverse;
-    justify-content: start;
     color: get-color(light);
 
     &__reveal{
@@ -557,6 +555,11 @@ body{
         &-image{
             z-index: -2;
             background-color: get-color(light);
+
+            & img {
+               @include image-cover;
+               height: 100%; 
+            }
             
             &-item{
                 position: absolute;
@@ -575,21 +578,7 @@ body{
         }
     }
 
-    &__primary{
-        flex-grow: 1;
-        padding-right: 20%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
     &__secondary{
-        width: 20%;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: start;
         gap: 30vh;
         padding-bottom: 3.2rem;
     }
@@ -2242,7 +2231,7 @@ body{
         }
     }
 
-    .menu{
+    .navmenu{
         padding: 0 1.6rem;
 
         &__list{
@@ -2833,19 +2822,13 @@ body{
         }
     }
     
-    .menu{
+    .navmenu{
 
         &__list{
 
             &-item{
 
                 p{
-                    padding-bottom: 1.6rem;
-                }
-
-                &--primary{
-                    font-size: 4.6rem;
-                    letter-spacing: .19185rem;
                     padding-bottom: 1.6rem;
                 }
 
@@ -3081,7 +3064,26 @@ body{
         letter-spacing: .342rem;
         word-spacing: .342rem;
     }
+    
+    .navmenu{
 
+        &__list{
+
+            &--primary{
+                height: unset;
+            }
+
+            &-item{
+
+                &--primary{
+                    font-size: 4.6rem;
+                    letter-spacing: .19185rem;
+                    padding-bottom: 1.6rem;
+                }
+
+            }
+        }
+    }
     
     .jr-suite{
         
@@ -3149,59 +3151,6 @@ body{
 
             &-wrapper{
                 width: auto;
-            }
-        }
-    }
-
-    .menu{
-        display: flex;
-        flex-direction: column;
-        gap: 1.6rem;
-        padding: 0;
-        overflow-y: auto;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-
-        &::-webkit-scrollbar{
-            display: none;
-        }
-
-        &__primary{
-            padding-right: 0;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-    
-        &__secondary{
-            width: 100%;
-            justify-content: start;
-            align-items: center;
-            gap: 2rem;
-            padding-bottom: 3.2rem;
-        }
-
-        &__list{
-
-            &--primary{
-                max-height: unset;
-                height: auto;
-            }
-
-            &-item{
-
-                &--primary{
-                    font-size: 3.4rem;
-                    letter-spacing: .15345rem;
-
-                    &:last-child{
-                        padding-bottom: 0;
-                    }
-                }
-                
-                &--secondary{
-                    text-align: center;
-                }
             }
         }
     }
@@ -3452,6 +3401,14 @@ body{
         }
     }
      
+    .navmenu{
+
+        &__secondary{
+            gap: 6rem;
+        }
+
+    }
+    
     .gardens{
         &__content{
             &-container{
@@ -3551,6 +3508,57 @@ body{
         
         &__border{
             width: 30%;
+        }
+    }
+    
+    .navmenu{
+        gap: 1.6rem;
+        padding: 0;
+        overflow-y: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        &__primary{
+            padding-right: 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    
+        &__secondary{
+            width: 100%;
+            justify-content: start;
+            align-items: center;
+            gap: 2rem;
+            padding-bottom: 3.2rem;
+        }
+
+        &__list{
+
+            &--primary{
+                max-height: unset;
+                height: auto;
+            }
+
+            &-item{
+
+                &--primary{
+                    font-size: 3.4rem;
+                    letter-spacing: .15345rem;
+
+                    &:last-child{
+                        padding-bottom: 0;
+                    }
+                }
+                
+                &--secondary{
+                    text-align: center;
+                }
+            }
         }
     }
     
